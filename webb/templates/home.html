@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Health</title>
+  </head>
+  <body>
+        <form action="" method="post">
+            {% csrf_token %}
+            AGE: <input type="number" name="age" id="age"><br>
+            
+            <label for="streaming service">Primary streaming service:</label>
+            <select name="streamingservice" id="streamingservice">
+              <option value="Spotify">Spotify</option>
+              <option value="YouTube Music">YouTube Music</option>
+              <option value="Apple Music">Apple Music</option>
+              <option value="Pandora">Pandora</option>
+              <option value="Other streaming service">Other streaming service</option>
+              <option value="I do not use a streaming service.">I do not use a streaming service.</option>
+            </select>
+            <br><br>
+            
+            <label for="Hours">Hours per day (between 0 and 24):</label>
+            <input type="range" id="Hours" name="Hours" min="0" max="24">
+            
+            <br><br>
+
+            <label for="While working">Music listen While working</label>
+            <select name="working" id="working">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+
+            <br><br>
+            <label for="Instrumentalist">Instrumentalist</label>
+            <select name="Instrumentalist" id="Instrumentalist">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            <br><br>
+            
+            <label for="Composer">Composer</label>
+            <select name="Composer" id="Composer">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            
+            <br><br>
+            <label for="Favgenre">Fav genre</label>
+            <select name="Favgenre" id="Favgenre">
+                <option value="Pop">Pop</option>
+                <option value="Rock">Rock</option>
+                <option value="Hip hop">Hip hop</option>
+                <option value="Video game music">Video game music</option>
+                <option value="Jazz">Jazz</option>
+                <option value="Metal">Metal</option>
+                <option value="Folk">Folk</option>
+                <option value="Country">Country</option>
+                <option value="K pop">K pop</option>
+                <option value="Rap">Rap</option>
+                <option value="EDM">EDM</option>
+                <option value="Classical">Classical</option>
+                <option value="R&B">R&B</option>
+                <option value="Gospel">Gospel</option>
+                <option value="Lofi">Lofi</option>
+                <option value="Latin">Latin</option>
+                
+            </select>
+            
+            <br><br>
+            
+            <label for="Exploratory">Exploratory</label>
+            <select name="Exploratory" id="Exploratory">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <br><br>
+            
+            <label for="Foreign languages">Foreign languages</label>
+            <select name="Foreignlanguages" id="Foreignlanguages">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            
+            <br><br>
+           
+            
+            <label for="BPM">BPM between 0 to 700</label>
+            <input type="range" id="Hours" name="Hours" min="0" max="700">
+            
+            <br><br>
+            
+            <label for="Frequency [Classical]">Frequency [Classical]</label>
+            <select name="Frequency[Classical]" id="Frequency[Classical]">
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Never">Never</option>
+                <option value="Very frequently">Very frequently</option>
+            </select>
+            <br><br>
+
+            <label for="Frequency [Country]">Frequency [Country]</label>
+            <select name="Frequency[Country]" id="Frequency[Country]">
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Never">Never</option>
+                <option value="Very frequently">Very frequently</option>
+            </select>
+
+            <br><br>
+            <label for="Frequency [Folk]">Frequency [Folk]</label>
+            <select name="Frequency[Folk]" id="Frequency[Folk]">
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Never">Never</option>
+                <option value="Very frequently">Very frequently</option>
+            </select>
+            <br><br>
+            <label for="Frequency [EDM]">Frequency [EDM]</label>
+            <select name="Frequency[EDM]" id="Frequency[EDM]">
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Never">Never</option>
+                <option value="Very frequently">Very frequently</option>
+            </select>
+            <br><br>
+            <label for="Frequency [Gospel]">Frequency [Gospel]</label>
+            <select name="Frequency[Gospel]" id="Frequency[Gospel]">
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Never">Never</option>
+                <option value="Very frequently">Very frequently</option>
+            </select>
+            <br><br>
+            <label for="Frequency [Hip hop]">Frequency [Hip hop]</label>
+            <select name="Frequency[Hip hop]" id="Frequency[Hip hop]">
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Never">Never</option>
+                <option value="Very frequently">Very frequently</option>
+            </select>
+            <br><br>
+            <label for="Frequency [Jazz]">Frequency [Jazz]</label>
+            <select name="Frequency[Jazz]" id="Frequency[Jazz]">
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Never">Never</option>
+                <option value="Very frequently">Very frequently</option>
+            </select>
+            
+            <br><br>
+            
+            <label for="Frequency [K pop]">Frequency [K pop]</label>
+            <select name="Frequency[K pop]" id="Frequency[K pop]">
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Never">Never</option>
+                <option value="Very frequently">Very frequently</option>
+            </select>
+            <br><br>
+            <label for="Frequency [Latin]">Frequency [Latin]</label>
+            <select name="Frequency[Latin]" id="Frequency[Latin]">
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Never">Never</option>
+                <option value="Very frequently">Very frequently</option>
+            </select>
+            <br><br>
+            <label for="Frequency [Lofi]">Frequency [Lofi]</label>
+            <select name="Frequency[Lofi]" id="Frequency[Lofi]">
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Never">Never</option>
+                <option value="Very frequently">Very frequently</option>
+            </select>
+            <br><br>
+            <label for="Frequency [Metal]">Frequency [Metal]</label>
+            <select name="Frequency[Metal]" id="Frequency[Metal]">
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Never">Never</option>
+                <option value="Very frequently">Very frequently</option>
+            </select>
+            <br><br>
+
+            <label for="Frequency [Pop]">Frequency [Pop]</label>
+            <select name="Frequency[Pop]" id="Frequency[Pop]">
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Never">Never</option>
+                <option value="Very frequently">Very frequently</option>
+            </select>
+            
+            <br><br>
+            
+            <label for="Frequency [R&B]">Frequency [R&B]</label>
+            <select name="Frequency[R&B]" id="Frequency[R&B]">
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Never">Never</option>
+                <option value="Very frequently">Very frequently</option>
+            </select>
+            <br><br>
+            <label for="Frequency [Rap]">Frequency [Rap]</label>
+            <select name="Frequency[Rap]" id="Frequency[Rap]">
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Never">Never</option>
+                <option value="Very frequently">Very frequently</option>
+            </select>
+            <br><br>
+            <label for="Frequency [Rock]">Frequency [Rock]</label>
+            <select name="Frequency[Rock]" id="Frequency[Rock]">
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Never">Never</option>
+                <option value="Very frequently">Very frequently</option>
+            </select>
+            <br><br>
+            <label for="Frequency [Video game music]">Frequency [Video game music]</label>
+            <select name="Frequency[Video game music]" id="Frequency[Video game music]">
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Never">Never</option>
+                <option value="Very frequently">Very frequently</option>
+            </select>
+            <br><br>
+            <label for="Music effects">Music effects</label>
+            <select name="Musiceffects" id="Musiceffects">
+                <option value="No effect">No effect</option>
+                <option value="Improve">Improve</option>
+                <option value="Worsen">Worsen</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Done">
+        </form>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
