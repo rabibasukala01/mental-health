@@ -27,7 +27,8 @@
             <br><br>
             
             <label for="Hours">Hours per day (between 0 and 24):</label>
-            <input type="range" id="Hours" name="Hours" min="0" max="24">
+            <input type="range" id="hours" name="hours" min="0" max="24" onchange="updateTextInput1(this.value);">
+            <input type="text" id="textInput1" value="">
             
             <br><br>
 
@@ -91,8 +92,9 @@
             <br><br>
            
             
-            <label for="BPM">BPM between 0 to 700</label>
-            <input type="range" id="Hours" name="Hours" min="0" max="700">
+            <label for="bpm">BPM between 0 to 700</label>
+            <input type="range" id="bpm" name="bpm" min="0" max="700" onchange="updateTextInput2(this.value);" >
+            <input type="text" id="textInput2" value="">
             
             <br><br>
             
@@ -245,5 +247,13 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    <script>
+        function updateTextInput1(val) {
+            document.getElementById('textInput1').value=val; 
+          }
+        function updateTextInput2(val) {
+            document.getElementById('textInput2').value=val; 
+          }
+    </script>
   </body>
 </html>
